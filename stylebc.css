@@ -1,0 +1,135 @@
+*{          /* basically "*" represents a universal selector it applies for everything in the page */ 
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0%;
+}
+
+.left{
+    box-sizing: border-box;
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(50, 50, 90);
+    float: left;
+    color: white;
+    padding: 20px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;  
+}
+.name{
+    font-size: 16px;
+}
+.connect-button{
+    
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none; /* also u can use transparent for border */
+}
+.bio{
+    text-align: center;
+    
+}
+
+.right{
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(26, 26, 27);
+    float: left;
+    color: white;
+    overflow: auto;
+}
+
+.art1{
+    text-align: center;
+    color: burlywood;
+    font-size: 50px;
+}
+
+#img1{
+    margin: 40px;
+    /* justify-content: space-around; */
+    display: flex;
+    flex-direction: row;
+}
+
+.image1{
+    /* border-radius: 20%; */
+    /* align-self: center; */
+    margin: 10px 60px;
+    width:250px;
+    height: 350px;
+    object-fit: cover;
+    /* float: left; */
+}
+
+.p1{
+    background-color: rgb(124, 81, 67);
+    margin: 40px;
+    padding: 50px;
+    text-align: center;
+    /* text-size-adjust: 15px; */
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+}
+
+.nav-container h3{
+    margin: 0;
+}
+
+
+
+.content{
+    margin: 30px 10px;
+}
+.secondart{
+    text-align: center;
+    color: burlywood;
+    font-size: 50px;
+    margin: 40px;
+    flex-direction: row;
+}
+#img2{
+    display: flex;
+}
+.lang1{
+    margin: 20px 60px;
+    width:300px;
+    height: 250px;
+    object-fit: cover;
+}
+.p2{
+    background-color: rgb(124, 81, 67);
+    margin: 40px;
+    padding: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+    .left{
+        float: none;
+        width: 100%;
+    }
+    .right{
+        float: none;
+        width: 100%;
+    }
+  }
